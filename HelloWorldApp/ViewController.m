@@ -34,6 +34,9 @@ typedef void(^clickBlock)();
     self.block = ^(){
         [self testTimer];
     };
+    self.block1 = ^{
+        [self testAction];
+    }
 }
 
 - (void)testTimer {
