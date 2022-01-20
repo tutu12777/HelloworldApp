@@ -34,13 +34,13 @@ typedef void(^clickBlock)();
     self.block = ^(){
         [self testTimer];
     };
-    self.block1 = ^{
-        [self testAction];
-    }
 }
 
 - (void)testTimer {
     NSLog(@"testTimer11111");
+    self.block1 = ^{
+        [self testAction];
+    }
 }
 
 //sdk国密，接口，（监控，埋点）
